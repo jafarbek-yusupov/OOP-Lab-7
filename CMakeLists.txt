@@ -3,4 +3,8 @@ project(week7)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(week7 main.cpp)
+add_executable(week7 main.cpp
+        UniversityMember.h
+        Student.h
+        Professor.h
+        Course.h)
