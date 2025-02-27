@@ -9,7 +9,7 @@ class Course {
 private: std::string courseName; Professor* instructor; std::vector<Student*> students;
 public:
     Course(std::string courseName, Professor* instructor) : courseName(courseName), instructor(instructor) {}
-    void AddStudent(Student* student){ students.push_back(student); }
+    void addStudent(Student* student){ students.push_back(student); }
     void displayCourseInfo() {
         std::cout << "Course name: " << courseName << "\nInstructor: "
         << instructor->displayInfo() << "\nStudents: \n";
