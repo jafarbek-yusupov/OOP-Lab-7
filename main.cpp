@@ -10,7 +10,7 @@ int main(){
     Student* s2 = new Student("Ben", 99, 102, 0.4);
 
     Course oopCourse("OOP", prof);
-    oopCourse.addStudent(s1);
+    oopCourse.addStudent(s1); oopCourse.addStudent(s2);
     oopCourse.displayCourseInfo();
     return 0;
 }

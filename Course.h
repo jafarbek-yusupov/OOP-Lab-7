@@ -11,8 +11,9 @@ public:
     Course(std::string courseName, Professor* instructor) : courseName(courseName), instructor(instructor) {}
     void addStudent(Student* student){ students.push_back(student); }
     void displayCourseInfo() {
-        std::cout << "Course name: " << courseName << "\nInstructor: "
-        << instructor->displayInfo() << "\nStudents: \n";
+        std::cout << "Course name: " << courseName << "\nInstructor: ";
+        instructor->displayInfo();
+        std::cout << "Students: \n";
         for(auto i : students){ i->displayInfo();}
     }
 };

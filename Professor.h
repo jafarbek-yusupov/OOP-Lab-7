@@ -8,8 +8,8 @@
 class Professor : public UniversityMember{
 private: int ID; std::string department;
 public:
-    Student(std::string name, int Age, int ID, std::string department) : UniversityMember(name, Age), ID(ID), department(department) {}
-    void displayInfo override() {
+    Professor(std::string name, int Age, int ID, std::string department) : UniversityMember(name, Age), ID(ID), department(department) {}
+    void displayInfo() override {
         std::cout << "Name: " << getName() << " | ID: " << ID << " | Department : " << department << " | Age: " << getAge() << std::endl;
     }
     int getID(){ return ID;}
