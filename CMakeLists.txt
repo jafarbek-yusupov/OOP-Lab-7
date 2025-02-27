@@ -7,4 +7,5 @@ add_executable(week7 main.cpp
         UniversityMember.h
         Student.h
         Professor.h
-        Course.h)
+        Course.h
+        CanteenQueue.h)
